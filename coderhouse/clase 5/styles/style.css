@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;400 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: hsl(355, 85%, 87%);
+    display: flex;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu_item a {
+    color:rgb(3, 24, 24);
+    text-decoration: none;
+}
+
+.menu_item.active a {
+    text-decoration: underline;
+
+}
+
+.imagenprincipal {
+    height: 80vh;
+    background-image: url("../img/arbol.jpg");
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+    
+}
+
+.imagenprincipal h2 {
+    color:blue;
+    background-color: rgb(18, 3, 54);
+    padding-inline: 15px;
+
+
+}
+
+.imagenprincipal p {
+    color: rgb(1, 13, 24);
+    text-align: center;
+}
+.tarjetitas {
+    display: flex;
+    padding: 60px;
+    gap: 20px;
+}
+.tarjetita {
+    background-color: rgb(188, 228, 231);
+    border-radius: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    
+
+   
+}
+
+.imformacion {
+    padding: 0 20px 20px 20px;
+
+}
+.tarjetita_imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: #a58ceb;
+    color: aliceblue;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}

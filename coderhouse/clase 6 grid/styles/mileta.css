@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 
+    "logo quien soy servicios"
+    "logo productos contacto";
+    gap: 1opx 60px;
+
+}
+.logo {
+    /*grid-column: 1/5;*/
+    /*grid-row: 2/3;*/
+    /*grid-area: logo;*/
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #a3eead;
+
+}
+
+.quiensoy {
+    /*/grid-column: 4/5;*/
+    /*grid-row: 2/3;*/
+    /*grid-area: quiensoy;*/
+    background-color: rgb(131, 131, 243);
+
+}
+
+.servicios {
+    /*grid-area: servicios;*/
+    background-color: rgb(155, 96, 150);
+
+}
+
+.productos {
+    /*grid-area: productos;*/
+    background-color: rgb(232, 238, 198);
+
+}
+
+.contacto {
+    /*grid-area: contacto;*/
+    background-color: rgb(243, 145, 150);
+
+}
+.container > div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > * {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+
+    }
+    .logo {
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 0;
+    }
+}

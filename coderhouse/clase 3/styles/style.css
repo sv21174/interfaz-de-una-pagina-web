@@ -1,0 +1,39 @@
+
+.menu {
+    list-style-type:none;
+}
+
+.menu li {
+    color:aquamarine;
+    display: Inline;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color:red;
+}
+
+.ingredientes {
+    list-style-position: inside;
+}
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin: 20px 40px 60px 0;
+    padding: 20px 20px 20px 20px;
+
+    /*backgound-image: url(*./../img/paisaje.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.caja p {
+    text-align: justify;
+    line-height: 60px;
+    text-decoration: line-through underline wavy;
+}
